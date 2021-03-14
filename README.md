@@ -1,24 +1,16 @@
-# README
+# Multiple Record, Multiple Model Batch Registration Form with cocoon
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![smaple-image-gif](./docs/images/sample_complete_recipe.gif)
 
-Things you may want to cover:
+## Version
 
-* Ruby version
+|  | version |
+| --- | --- |
+| ruby | 2.7.2 |
+| rails | 6.1 |
+| cocoon | 1.2.14 |
+| jquery | 3.6.0 |
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## ERD
+![erd-image](./docs/images/erd.png)
