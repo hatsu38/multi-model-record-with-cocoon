@@ -1,0 +1,12 @@
+<h1>レシピ一覧</h1>
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li><%= link_to recipe.name, edit_recipe_path(recipe) %></li>
+    <ul>
+      <% recipe.ingredients.each do |ingredient| %>
+        <li><%= ingredient.name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</ul>
+<%= link_to "レシピの新規作成", new_recipe_path %>

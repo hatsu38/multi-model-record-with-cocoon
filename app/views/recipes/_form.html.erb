@@ -1,0 +1,16 @@
+<%= form_with model: model do |form| %>
+  <div>
+    <%= form.label :name, "レシピ名" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div id="ingredients">
+    <%= link_to_add_association '材料の追加', form, :ingredients,
+      data: { association_insertion_method: 'append' } %>
+    <%= form.fields_for :ingredients do |ingredient| %>
+      <%= render "recipes/ingredient_fields", f: ingredient %>
+    <% end %>
+  </div>
+
+  <%= form.submit "作成する" %>
+<% end %>
